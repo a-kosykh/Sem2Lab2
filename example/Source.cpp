@@ -23,7 +23,7 @@ int main()
 	Book **ppA = new Book*[n];
 	for (unsigned int i = 0; i < n; ++i)
 	{
-		cout << "//////////////" << endl;
+		cout << "///////////////////" << endl;
 		cout << "Name of the book: ";
 		cin >> S;
 		cout << "Price (RUB): ";
