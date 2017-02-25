@@ -12,7 +12,7 @@ int main()
 	cout << endl;
 
 	double dollar;
-	cout << "Kurs dollara: ";
+	cout << "Dollar exchange rate: ";
 	cin >> dollar;
 	cout << endl;
 
