@@ -2,9 +2,9 @@
 #include <catch.hpp>
 
 SCENARIO ("getDollarPriceCheck", "[USDcheck]"){
-    Book price = 180;
+    double price = 180;
     double dollar = 60;
 
-    double rv = Book::getDollPrice(dollar);
+    double rv = getDollPrice(dollar);
         REQUIRE ( rv == 3 );
 }
