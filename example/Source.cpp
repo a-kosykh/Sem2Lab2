@@ -42,4 +42,5 @@ int main()
 	cout << "Summary price in RUB: " << sumPriceR << " RUB" << endl;
 	
 	system("pause");
+	return 0;
 }
