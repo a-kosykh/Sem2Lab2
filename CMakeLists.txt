@@ -16,4 +16,3 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 add_library (${PROJECT_NAME} STATIC ${SOURCES})
 
 add_subdirectory(example)
-add_subdirectory(tests)
