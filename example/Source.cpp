@@ -2,8 +2,6 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
-
 int main()
 {
 	unsigned int n;
@@ -36,6 +34,7 @@ int main()
 			cout << "ERROR"; return 0;
 		}
 		cout << "Price (RUB): ";
+		cin >> p;
 		if (!cin) {
 			cout << "ERROR"; return 0;
 		}
@@ -47,14 +46,10 @@ int main()
 	for (unsigned int i = 0; i < n; ++i) {
 		ppA[i]->print();
 	}
-	delete *ppA;
 	cout << "\nTotal books: " << n << endl;
 	cout << "Summary price in USD: " << sumPriceD << " USD" << endl;
 	cout << "Summary price in RUB: " << sumPriceR << " RUB" << endl;
-	
-	for (unsigned int i = 0; i < n; ++i) {
-		ppA[i]->print();
-	}
+	delete[]ppA;
 	system("pause");
 	return 0;
 }
