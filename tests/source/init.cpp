@@ -2,8 +2,8 @@
 #include <catch.hpp>
 
 SCENARIO ("getDollarPriceCheck", "[USDcheck]"){
-    double dollar = 60;
+    double x = 60;
 
-    double rv = Book::getDollPrice(dollar);
+    double rv = getDollPrice(x);
         REQUIRE ( rv == 3 );
 }
