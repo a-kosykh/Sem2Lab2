@@ -1,9 +1,10 @@
 #include <testclass.h>
 #include <catch.hpp>
 
-SCENARIO ("getDollarPriceCheck", "[USDcheck]"){
-    double x = 60;
+SCENARIO ("getDollarPriceCheck", "[Book::getDollPrice]"){
+    double Book::price = 180;
+	double x = 60;
 
-    double rv = getDollPrice(x);
+    double rv = Book::getDollPrice(x);
         REQUIRE ( rv == 3 );
 }
