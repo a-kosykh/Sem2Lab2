@@ -9,11 +9,17 @@ int main()
 	unsigned int n;
 	cout << "How many books: ";
 	cin >> n;
+	if (!cin) {
+		cout << "ERROR"; return 0;
+	}
 	cout << endl;
 
 	double dollar;
-	cout << "Dollar exchange rate: ";
+	cout << "Dollar exchange rate (RUB): ";
 	cin >> dollar;
+	if (!cin) {
+		cout << "ERROR"; return 0;
+	}
 	cout << endl;
 
 	double sumPriceD= 0, sumPriceR = 0 ;
@@ -23,11 +29,16 @@ int main()
 	Book **ppA = new Book*[n];
 	for (unsigned int i = 0; i < n; ++i)
 	{
-		cout << "///////////////////" << endl;
+		cout << "//////////////" << endl;
 		cout << "Name of the book: ";
 		cin >> S;
+		if (!cin) {
+			cout << "ERROR"; return 0;
+		}
 		cout << "Price (RUB): ";
-		cin >> p;
+		if (!cin) {
+			cout << "ERROR"; return 0;
+		}
 		cout << endl;
 		ppA[i] = new Book(S, p, i);
 		sumPriceD += ppA[i]->getDollPrice(dollar);
@@ -36,11 +47,14 @@ int main()
 	for (unsigned int i = 0; i < n; ++i) {
 		ppA[i]->print();
 	}
-	delete ppA;
+	delete *ppA;
 	cout << "\nTotal books: " << n << endl;
 	cout << "Summary price in USD: " << sumPriceD << " USD" << endl;
 	cout << "Summary price in RUB: " << sumPriceR << " RUB" << endl;
 	
+	for (unsigned int i = 0; i < n; ++i) {
+		ppA[i]->print();
+	}
 	system("pause");
 	return 0;
 }
