@@ -2,7 +2,8 @@
 #include <catch.hpp>
 
 SCENARIO ("getDollarPriceCheck", "[Book::getDollPrice]"){
-    Book::price = 180;
+    Book obj;
+	obj.price = 180;
 	double x = 60;
 
     double rv = Book::getDollPrice(x);
