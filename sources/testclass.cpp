@@ -16,7 +16,7 @@ double Book::getRublPrice()
 {
 	return price;
 }
-double Book::getDollPrice(double price ,double dollar)
+double Book::getDollPrice(double dollar)
 {
 	return price / dollar;
 }
