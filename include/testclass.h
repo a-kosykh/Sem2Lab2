@@ -10,7 +10,7 @@ public:
 	Book(std::string nam, double pr, unsigned int c);
 	double getCount(double c);
 	double getRublPrice();
-	double getDollPrice(double dollar);
+	double getDollPrice(double price,double dollar);
 	void print();
 	~Book();
 };
