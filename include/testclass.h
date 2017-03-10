@@ -4,8 +4,9 @@
 class Book {
 	std::string name;
 	unsigned int count;
-	double price;
+	
 public:
+	double price;
 	Book(std::string nam, double pr, unsigned int c);
 	double getCount(double c);
 	double getRublPrice();
