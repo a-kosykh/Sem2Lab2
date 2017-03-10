@@ -2,10 +2,9 @@
 #include <catch.hpp>
 
 SCENARIO ("getDollarPriceCheck", "[Book::getDollPrice]"){
-    Book obj;
-	obj.price = 180;
+    Book obj = new Book("asdasd", 180, 2);
 	double x = 60;
 
-    double rv = Book::getDollPrice(x);
+    double rv = Book->getDollPrice(x);
         REQUIRE ( rv == 3 );
 }
