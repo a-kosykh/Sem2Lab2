@@ -7,7 +7,7 @@ int main()
 	unsigned int n;
 	cout << "How many books: ";
 	cin >> n;
-	if (!cin) {
+	if (!cin || n <= 0) {
 		cout << "ERROR"; return 0;
 	}
 	cout << endl;
@@ -15,7 +15,7 @@ int main()
 	double dollar;
 	cout << "Dollar exchange rate (RUB): ";
 	cin >> dollar;
-	if (!cin) {
+	if (!cin || dollar <= 0) {
 		cout << "ERROR"; return 0;
 	}
 	cout << endl;
