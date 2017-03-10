@@ -40,7 +40,7 @@ int main()
 		}
 		cout << endl;
 		ppA[i] = new Book(S, p, i);
-		sumPriceD += ppA[i]->getDollPrice(dollar);
+		sumPriceD += ppA[i]->getDollPrice(price, dollar);
 		sumPriceR += ppA[i]->getRublPrice();
 	}
 	for (unsigned int i = 0; i < n; ++i) {
