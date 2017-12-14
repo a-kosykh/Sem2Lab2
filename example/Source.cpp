@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-	unsigned int n;
+	int n; //изменили unsigned int на int
 	cout << "How many books: ";
 	cin >> n;
 	if (!cin || n <= 0) {
