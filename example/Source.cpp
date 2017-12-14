@@ -1,6 +1,5 @@
 #include "testclass.h"
-#include <iostream>
-#include <string>
+//убрали лишние инклуды так как они уже есть в testclass.h
 using namespace std;
 int main()
 {
