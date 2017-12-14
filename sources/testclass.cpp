@@ -1,11 +1,7 @@
 #include "testclass.h"
 //удалили лишние инклуды
-Book::Book(const std::string & nam, const double & pr, unsigned int c)
-{
-	count = c;
-	name = nam;
-	price = pr;
-}
+Book::Book(const std::string & nam, const double & pr, unsigned int c): count(c+1), name(nam), price(pr)   //вынесли инициализацию переменных из фигурных скобок
+{}
 double Book::getCount(double c)
 {
 	count++;
