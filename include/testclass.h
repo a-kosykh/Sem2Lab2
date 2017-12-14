@@ -7,7 +7,7 @@ class Book {
 	double price;   //сделали поле price  private 
 public:
 	
-	Book(std::string nam, double pr, unsigned int c);
+	Book(const std::string & nam, const double & pr, unsigned int c); //сделали передачу аргументов по ссылке, при этом добавили const
 	double getCount(double c);
 	double getRublPrice();
 	double getDollPrice(double dollar);
