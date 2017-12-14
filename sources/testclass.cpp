@@ -17,7 +17,7 @@ double Book::getDollPrice(double dollar)
 }
 void Book::print()
 {
-	std::cout << "\nBook #" << count + 1 << "\nName of the book: " << name << "\nPrice in RUB: " << price;
+	std::cout << "\nBook #" << count  << "\nName of the book: " << name << "\nPrice in RUB: " << price;  //выводим просто count
 	std::cout << "\n----------------------------";
 }
 Book::~Book() {}
