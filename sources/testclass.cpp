@@ -1,6 +1,5 @@
 #include "testclass.h"
-#include <iostream>
-#include <string>
+//удалили лишние инклуды
 Book::Book(std::string nam, double pr, unsigned int c)
 {
 	count = c;
