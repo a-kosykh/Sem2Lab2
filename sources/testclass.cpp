@@ -4,7 +4,7 @@ Book::Book(const std::string & nam, const double & pr, unsigned int c): count(c+
 {}
 double Book::getCount(double c)
 {
-	count++;
+  //убрали count++
 	return count;
 }
 double Book::getRublPrice()
