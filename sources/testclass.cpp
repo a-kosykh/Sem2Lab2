@@ -1,6 +1,6 @@
 #include "testclass.h"
 //удалили лишние инклуды
-Book::Book(std::string nam, double pr, unsigned int c)
+Book::Book(const std::string & nam, const double & pr, unsigned int c)
 {
 	count = c;
 	name = nam;
